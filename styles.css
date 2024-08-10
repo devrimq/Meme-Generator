@@ -1,0 +1,56 @@
+* {
+  margin:2px;
+  padding2px;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Bootstrap'ın arka plan rengi */
+  color: #333;
+  
+  padding: 0;
+}
+
+.meme-generator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.meme-generator label {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.meme-generator input[type="file"],
+.meme-generator input[type="text"] {
+  margin-bottom: 1rem; /* Bootstrap uyumlu margin */
+}
+
+canvas {
+  border: 1px solid #ccc; /* Border stilini koruduk */
+  margin-top: 20px;
+  width: 100%; /* Canvas'ın genişliğini ekran boyutuna göre ayarla */
+  max-width: 100%; /* Max genişliği ekran boyutuyla sınırlı tut */
+  height: auto; /* Yüksekliği orantılı tut */
+}
+
+footer {
+  background-color: #343a40; /* Footer arka plan rengi */
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

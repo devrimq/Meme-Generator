@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Meme Üretici | Kendi Eşsiz Geyik Meme'inizi Oluşturun</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+</head>
+
+<body>
+
+  <div class="container mt-4">
+    <header class="text-center mb-4">
+      <h1 class="display-4">MİM JENARATÖR</h1>
+      <p class="lead">Kendi eşsiz Mim'inizi oluşturun. Resim ekleyin veya bir resim URL'si girin, ardından metin ekleyin.</p>
+    </header>
+    
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="meme-generator p-3 border rounded bg-light">
+          <label for="imageFileInput" class="form-label">Bir Resim seç veya bir Resim URL'si yapıştır</label>
+          <input type="file" id="imageFileInput" class="form-control mb-3">
+          <input type="text" id="imageUrlInput" class="form-control mb-3" placeholder="Resim URL'si">
+
+          <label for="topTextInput" class="form-label">Üst Metin</label>
+          <input type="text" id="topTextInput" class="form-control mb-3">
+
+          <label for="bottomTextInput" class="form-label">Alt Metin</label>
+          <input type="text" id="bottomTextInput" class="form-control mb-3">    
+         
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <canvas id="meme" class="d-block mx-auto mt-4 border rounded bg-white"></canvas>
+        <p class="lead">Resminizi istediğiniz yere kaydedebilirsiniz.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p class="mb-0">Geyik yapmaya devam et.</p>
+    <p class="mb-0"><a href="mailto:devrimq@gmail.com" class="text-white">devrimq@gmail.com</a></p>
+  </footer>
+
+  <!-- JS KODLARI -->
+  <script src="script.js"></script>
+</body>
+
+</html>
